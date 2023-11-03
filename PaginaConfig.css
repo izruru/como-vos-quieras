@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
+*{
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #161515;
+    background: url("https://www.koeitecmoeurope.com/fate-sr/assets/img/webp/top_bg.webp") transparent no-repeat fixed center;
+    margin: 0;
+}
+.header nav {
+    background-color: #161515;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    margin: 0;
+    padding: 0; 
+}
+.header nav .logo img{
+    height: 70px;
+    width:auto;
+}
+.header nav .navlinks li {
+    display: inline-block;
+    padding: 0px 20px;
+    color: #ff6600;
+    text-shadow: 0 0 16px white;
+}
+.header nav .logo img{
+    border-radius: 100%;
+    padding: 0 7 0 0;
+    height: 80px;
+}
+.imgone{
+    height: 250px;
+    width: 205px;
+}
+#imganime{
+    float: right; 
+}
+#oyasumi{
+    height: 250px;
+    width: 205px;
+}
+article {
+    border-color: #000000ad;
+    padding: 7px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: rgb(168, 166, 166);
+
+}
+footer {
+    background-color: rgb(175 175 175 / 83%);
+    border: solid 2px;
+    height: 25%;
+    width: 50%;
+    box-shadow: 0 0 7px 5px black;
+}
+span {
+    width: 20%;
+    color: #ff6600;
+    text-decoration: underline;
+    margin: 0 0 0 0;
+    text-shadow: 0 0 15px black;
+    font-size: 30px;
+    text-align: left;
+}
+h1{
+    font-family: 'Skranji', cursive;
+    padding-left: 7%;
+    margin-top: 3%;
+    font-size: 60px;
+}
+h2 {
+    color: #ff6600;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    text-shadow: 0 0 15px black;
+    font-family: 'Skranji', cursive;
+    margin: 20px;
+}
+h3{
+    color: #ff6600;
+    text-decoration: underline;
+    font-size: 30px;
+    text-shadow: 0 0 15px black;
+    font-family: 'Skranji', cursive;
+    padding-left: 7%;
+    margin-top: 3%;
+}
+#shonen{
+    color: #ff6600;
+    text-align: left;
+    font-size: 100px;
+    text-shadow: 0 0 15px black;
+    font-family: 'Skranji', cursive;
+    margin: 20px;
+    padding-left: 7%;
+}
+.test01 {
+    background-color: #000;
+    position: relative;
+    padding: 2em;
+    margin: 6em 0 10em;
+    width: 100%;
+    padding: 0px 35px 210px 35px;
+    margin-top: 10%;
+}
+.test01::before {
+    content: "";
+    background: url("https://www.koeitecmoeurope.com/fate-sr/assets/img/common_fog_section.png") no-repeat;
+    background-size: 100%;
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    transform: translate(0,-100%);
+    width: 100%;
+    padding-top: 14%;
+}
+.test01::after {
+    content: "";
+    background: url("https://www.koeitecmoeurope.com/fate-sr/assets/img/common_fog_section.png") no-repeat;
+    background-size: 100%;
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    transform: translate(0,100%) scale(1,-1);
+    width: 100%;
+    padding-top: 14%;
+}
+ul.slider li {
+    left: 0px;
+    top: 0px;
+    height: inherit;
+    list-style: none;
+}
+.bg-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35%;
+    height: auto;
+    transform: translate(-50%,-50%);
+    filter: hue-rotate(150deg);
+    opacity: .5;
+}
+.bg-image img {
+    display: block;
+    width: 100%;
+    animation: rotation 40s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+#shonen{
+    background-color: #f8f7f7;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    height: 50%;
+    width: 50%;
+}
+#ModeloManga{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;   
+}
+a{
+    text-decoration: none; 
+    color: inherit;
+}
+#imagen{
+    box-shadow: #fff;
+    width: 295.5px; 
+    height: 415px;
+    margin: 0px 0px 0px 20px;
+}
+.book{
+    background: url("https://re1999.bluepoch.com/img/5.png") center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 40px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: fit-content; 
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.book-cover {
+    text-align: center;
+}
+.book-cover img {
+    max-width: 100%;
+    height: auto;
+}
+.book-details {
+    display: flex;
+    flex-direction: column;
+}
+.book-title a {
+    font-weight: bold;
+    text-decoration: none;
+}
+.book-author a {
+    text-decoration: none;
+    color: #007bff;
+}
+.book-category a {
+    text-decoration: none;
+    color: #777;
+}
+.book-description {
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    line-height: 1.6em;
+    height: 4.8em;
+}
+.book-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
