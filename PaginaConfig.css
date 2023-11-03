@@ -33,6 +33,11 @@ body{
     border-radius: 100%;
     padding: 0 7 0 0;
     height: 80px;
+    filter: hue-rotate(22deg);
+}
+.header nav .logo img:hover{
+    transform: scale(1.2);
+    cursor:pointer;
 }
 .imgone{
     height: 250px;
@@ -244,4 +249,11 @@ a{
     font-size: 14px;
     cursor: pointer;
     margin-top: 10px;
+}
+.links{
+    color: rgb(246, 135, 246);
+    text-decoration: underline
+}
+.book-button{
+    border-radius: 20px;
 }
