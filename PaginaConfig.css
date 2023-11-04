@@ -59,13 +59,7 @@ article {
     color: rgb(168, 166, 166);
 
 }
-footer {
-    background-color: rgb(175 175 175 / 83%);
-    border: solid 2px;
-    height: 25%;
-    width: 50%;
-    box-shadow: 0 0 7px 5px black;
-}
+
 span {
     width: 20%;
     color: #ff6600;
@@ -257,3 +251,137 @@ a{
 .book-button{
     border-radius: 20px;
 }
+/* estilo del footer */
+#foot{
+    border:solid 2px;
+    background: url("https://www.koeitecmoamerica.com/fate-sr/assets/img/spec_bg.jpg") no-repeat center;
+    padding: 20px 20px 50px;
+    text-align: center;
+    margin: 3% 0px 0px 0px;
+}
+.footer-icos {
+    margin: 20px 0;
+    color: #ddd;
+}
+.footer-logo img{
+    width: 250px;
+    margin: 40px 0;
+}
+footer .other li {
+    letter-spacing: 0;
+    background: url("https://fate-go.us/assets/img/common/item_mark_gold.png") no-repeat right center;
+    background-size: 11px;
+    padding: 5px 28px 5px 14px;
+    display: inline-block;
+}
+footer .other li a {
+    text-decoration: none;
+    font-size: 12px;
+    padding: 4px 0;
+    position: relative;
+    color: rgb(168, 166, 166);
+}
+p{
+    color: rgb(168, 166, 166);
+}
+.tdm-social-item-wrap {
+    display: inline-block;
+
+}
+.tdi_131 .tdm-social-item {
+    width: 39.2px;
+    height: 39.2px;
+    margin: 7px 14px 7px 0;
+}
+.tdm-social-wrappertds-social4tdi_131{
+    filter: hue-rotate(150deg);
+}
+
+/* comentarios */
+.ponyo{
+    display: block;
+    margin-right: 30%;
+    margin-left: 28%;
+    width: 48.82117%;
+    border: 1px solid #004f75;
+    margin-bottom: 5px;
+    list-style: none;
+    padding: 3px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: .5rem;
+    background-image: linear-gradient(to right,#004f75,#005782,#00608f,#00689c,#0071a9,#0071a9,#0071a9,#0071a9,#00689c,#00608f,#005782,#004f75);
+}
+.contactos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+}
+
+.contactos .image{
+    flex: 1 1 40rem;
+}
+
+.contactos .image img{
+    width: 100%;
+    padding: 2rem;
+}
+
+.contactos form{
+    flex: 1 1 40rem;
+    margin: 1rem;
+    padding: 2rem 3rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    background: url("https://en.onmyojigame.com/pc/gw/20171215213318/img/fea_box_75d83f8.png") center no-repeat;
+    background-size: 103% 104%;
+}
+
+.contactos .heading{
+    text-align: left;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+
+.contactos form .inputcaja{
+    position: relative;
+}
+
+.contactos form .inputcaja input, .contactos form .inputcaja textarea{
+    width: 100%;
+    background: none;
+    color: rgb(168, 166, 166);
+    margin: 1.5rem 0;
+    padding: .5rem 0;
+    font-size: 1.7rem;
+    border: 0;
+    border-bottom: .1rem solid rgba(0, 0, 0, .1);
+    text-transform: none;
+}
+
+.contactos form .inputcaja textarea{
+    resize: none;
+    height: 13rem;
+}
+
+.contactos form .inputcaja label{
+    position: absolute;
+    top: 1.7rem;
+    left: 0;
+    font-size: 1.7rem;
+    color: inherit;
+    transition: .2s linear;
+}
+
+.contactos form .inputcaja input:focus ~ label,
+.contactos form .inputcaja input:valid ~ label,
+.contactos form .inputcaja textarea:focus ~ label,
+.contactos form .inputcaja textarea:valid ~ label{
+    top: -.5rem;
+    font-size: 1.5rem;
+    color: indigo;
+}
+/* terminan los comentarios */
