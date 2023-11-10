@@ -4,13 +4,18 @@
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
+@font-face {
+    font-family:'kamikaze.3d-gradient-regular';
+    src: url(kamikaze.3d-gradient-regular.ttf);
+}
+
 body{
     background-color: #161515;
     background: url("https://www.koeitecmoeurope.com/fate-sr/assets/img/webp/top_bg.webp") transparent no-repeat fixed center;
     margin: 0;
 }
-.header nav {
-    background-color: #161515;
+header{
+    background-color: #0a0a0a;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,23 +24,43 @@ body{
     margin: 0;
     padding: 0; 
 }
-.header nav .logo img{
+header .logo img{
     height: 70px;
     width:auto;
 }
-.header nav .navlinks li {
-    display: inline-block;
-    padding: 0px 20px;
-    color: #ff6600;
-    text-shadow: 0 0 16px white;
+ul, ol{
+    list-style: none;
 }
-.header nav .logo img{
+.navlinks li a {
+    font-size: 35px;
+    display:block;
+    padding: 0px 20px;
+    font-family:'kamikaze.3d-gradient-regular';
+    color: #ff6600; 
+}
+
+.navlinks > li{
+    float: left;
+}
+.navlinks li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.navlinks li:hover > ul{
+    display:block;
+}
+header .navlinks li a:hover{
+    font-size: 45px;
+}
+
+header .logo img{
     border-radius: 100%;
     padding: 0 7 0 0;
     height: 80px;
     filter: hue-rotate(22deg);
 }
-.header nav .logo img:hover{
+header .logo img:hover{
     transform: scale(1.2);
     cursor:pointer;
 }
@@ -57,7 +82,6 @@ article {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     color: rgb(168, 166, 166);
-
 }
 
 span {
@@ -150,6 +174,7 @@ ul.slider li {
     transform: translate(-50%,-50%);
     filter: hue-rotate(150deg);
     opacity: .5;
+    user-select: none;
 }
 .bg-image img {
     display: block;
@@ -188,8 +213,9 @@ a{
     margin: 0px 0px 0px 20px;
 }
 .book{
-    background: url("https://re1999.bluepoch.com/img/5.png") center;
+    background: url("https://i.imgur.com/np2B2Wx.jpg") center no-repeat ;
     display: grid;
+    background-size: 101% 101%;
     grid-template-columns: auto 1fr;
     gap: 40px;
     border: 1px solid #ccc;
@@ -244,16 +270,141 @@ a{
     cursor: pointer;
     margin-top: 10px;
 }
+.book1{
+    background: url("https://i.imgur.com/AjqEYna.png") center no-repeat;
+    background-size: 101% 101%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 40px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: fit-content; 
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.book1-cover {
+    text-align: center;
+}
+.book1-cover img {
+    max-width: 100%;
+    height: auto;
+}
+.book1-details {
+    display: flex;
+    flex-direction: column;
+}
+.book1-title a {
+    font-weight: bold;
+    text-decoration: none;
+}
+.book1-author a {
+    text-decoration: none;
+    color: #007bff;
+}
+.book1-category a {
+    text-decoration: none;
+    color: #777;
+}
+.book1-description {
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    line-height: 1.6em;
+    height: 4.8em;
+}
+.book1-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.book2{
+    background: url("https://i.imgur.com/ZVBcBie.jpg") center no-repeat;
+    background-size: 101% 101%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 40px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: fit-content; 
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.book2-cover {
+    text-align: center;
+}
+.book2-cover img {
+    max-width: 100%;
+    height: auto;
+}
+.book2-details {
+    display: flex;
+    flex-direction: column;
+}
+.book2-title a {
+    font-weight: bold;
+    text-decoration: none;
+}
+.book2-author a {
+    text-decoration: none;
+    color: #007bff;
+}
+.book2-category a {
+    text-decoration: none;
+    color: #777;
+}
+.book2-description {
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    line-height: 1.6em;
+    height: 4.8em;
+}
+.book2-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 20px;
+}
 .links{
     color: rgb(246, 135, 246);
     text-decoration: underline
+}
+.links img {
+    vertical-align: middle;
+    margin-right: 5px;
+    border-radius: 100%;
+    width: 2%;
+    margin-left: 1%;
 }
 .book-button{
     border-radius: 20px;
 }
 /* estilo del footer */
 #foot{
-    border:solid 2px;
+    border-top:solid 2px;
     background: url("https://www.koeitecmoamerica.com/fate-sr/assets/img/spec_bg.jpg") no-repeat center;
     padding: 20px 20px 50px;
     text-align: center;
@@ -296,6 +447,7 @@ p{
 .tdm-social-wrappertds-social4tdi_131{
     filter: hue-rotate(150deg);
 }
+/* fin del footer */
 
 /* comentarios */
 .ponyo{
