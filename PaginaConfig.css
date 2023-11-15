@@ -8,18 +8,22 @@
     font-family:'kamikaze.3d-gradient-regular';
     src: url(kamikaze.3d-gradient-regular.ttf);
 }
-
+@font-face {
+    font-family:'Kamikaze-Italic';
+    src: url(Kamikaze-Italic.ttf);
+}
 body{
     background-color: #161515;
     background: url("https://www.koeitecmoeurope.com/fate-sr/assets/img/webp/top_bg.webp") transparent no-repeat fixed center;
     margin: 0;
 }
+/* estilos del heder */
 header{
     background-color: #0a0a0a;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 85px;
+    height: 105px;
     padding: 5px 10%;
     margin: 0;
     padding: 0; 
@@ -31,12 +35,20 @@ header .logo img{
 ul, ol{
     list-style: none;
 }
-.navlinks li a {
+.textnodespl {
     font-size: 35px;
     display:block;
     padding: 0px 20px;
     font-family:'kamikaze.3d-gradient-regular';
     color: #ff6600; 
+}
+.textdespl{
+    font-family: 'Kamikaze-Italic';
+   background-color: #0a0a0a;
+    font-size: 35px;
+    display:block;
+    padding: 0px 20px;
+    color: #ff6600;
 }
 
 .navlinks > li{
@@ -64,6 +76,9 @@ header .logo img:hover{
     transform: scale(1.2);
     cursor:pointer;
 }
+/* fin del heder */
+
+/* img */
 .imgone{
     height: 250px;
     width: 205px;
@@ -75,15 +90,9 @@ header .logo img:hover{
     height: 250px;
     width: 205px;
 }
-article {
-    border-color: #000000ad;
-    padding: 7px;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    color: rgb(168, 166, 166);
-}
+/* img */
 
+/* diseño de texto */
 span {
     width: 20%;
     color: #ff6600;
@@ -117,16 +126,11 @@ h3{
     padding-left: 7%;
     margin-top: 3%;
 }
-#shonen{
-    color: #ff6600;
-    text-align: left;
-    font-size: 100px;
-    text-shadow: 0 0 15px black;
-    font-family: 'Skranji', cursive;
-    margin: 20px;
-    padding-left: 7%;
-}
+/* fin del diseño de texto */
+
+/* diseño de los contenedores */
 .test01 {
+    font-size: 18px; 
     background-color: #000;
     position: relative;
     padding: 2em;
@@ -189,6 +193,8 @@ ul.slider li {
         transform: rotate(359deg);
     }
 }
+/* fin de diseño de los contenedores */
+
 #shonen{
     background-color: #f8f7f7;
     margin-top: 45px;
@@ -212,6 +218,7 @@ a{
     height: 415px;
     margin: 0px 0px 0px 20px;
 }
+/* ficha del manga 0 */
 .book{
     background: url("https://i.imgur.com/np2B2Wx.jpg") center no-repeat ;
     display: grid;
@@ -270,6 +277,9 @@ a{
     cursor: pointer;
     margin-top: 10px;
 }
+/* fin de ficha del manga 0 */
+
+/* ficha del manga 1 */
 .book1{
     background: url("https://i.imgur.com/AjqEYna.png") center no-repeat;
     background-size: 101% 101%;
@@ -329,6 +339,9 @@ a{
     margin-top: 10px;
     border-radius: 20px;
 }
+/* fin de ficha del manga 1 */
+
+/* ficha del manga 2 */
 .book2{
     background: url("https://i.imgur.com/ZVBcBie.jpg") center no-repeat;
     background-size: 101% 101%;
@@ -388,6 +401,9 @@ a{
     margin-top: 10px;
     border-radius: 20px;
 }
+/* ficha del manga 2 */
+
+/* estilo de los links y botones */
 .links{
     color: rgb(246, 135, 246);
     text-decoration: underline
@@ -402,6 +418,8 @@ a{
 .book-button{
     border-radius: 20px;
 }
+/* fin del estilo de los links y botones */
+
 /* estilo del footer */
 #foot{
     border-top:solid 2px;
@@ -537,3 +555,31 @@ p{
     color: indigo;
 }
 /* terminan los comentarios */
+
+@media(pointer:coarse){
+    header{
+    height: 150px;
+    }
+    .textnodespl{
+        font-size: 45px;
+    }
+    header .navlinks li a:hover{
+        font-size: 55px;
+    }
+    .textdespl{
+        font-size: 55px;
+    }
+    #flechita{
+        height: 80px;
+        width: 80px;
+    }
+    #imganime{
+        display: none;
+    }
+    #foot{
+        height: 25%;
+    }
+    #imagen{
+        height: 600px;
+    }
+}
