@@ -486,7 +486,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap
     padding-bottom: 4rem;
 }
 
